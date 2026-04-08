@@ -10,7 +10,7 @@ const AddExpense = ({ open, onCancel, onFinish }) => {
         form={form}
         layout="vertical"
         onFinish={(values) => {
-          onFinish[(values, "expense")];
+          onFinish(values, "expense");
           form.resetFields();
         }}
       >

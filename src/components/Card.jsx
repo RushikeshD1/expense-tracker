@@ -4,11 +4,8 @@ const { Meta } = Card;
 
 const Cards = ({showExpenseModal, showIncomeModal, currentBalance=0, income=0, expenses=0}) => {
 
-    
-
-
   return (
-    <Row className="px-4 py-6 flex justify-between items-center">
+    <Row className="px-4 py-6 flex justify-between items-center flex-wrap">
       <Card title="Current Balance" className="text-center w-[31%] shadow-md">
         <div className="flex flex-col justify-center items-center gap-2">
           <p>₹{currentBalance}</p>

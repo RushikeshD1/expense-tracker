@@ -11,7 +11,7 @@ const AddIncome = ({open, onCancel, onFinish}) => {
         form={form}
         layout="vertical"
         onFinish={(values) => {
-          onFinish[(values, "expense")];
+          onFinish(values, "income");
           form.resetFields();
         }}
       >
@@ -48,11 +48,9 @@ const AddIncome = ({open, onCancel, onFinish}) => {
           <Select
             placeholder="Select category"
             options={[
-              { value: "food", label: "Food" },
-              { value: "travel", label: "Travel" },
-              { value: "shopping", label: "Shopping" },
-              { value: "bills", label: "Bills" },
-              { value: "other", label: "Other" },
+              { value: "Salary" },
+              { value: "Investment" },
+              { value: "Freelancer" }
             ]}
           />
         </Form.Item>
